@@ -1,0 +1,14 @@
+name: "✏️ Suggestion"
+description: Suggest a wording change or new tip for the guide
+title: "[Suggestion] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: "🔒 Please don't share personal stories or problems here. GitHub is public and permanent."
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your suggestion
+    validations:
+      required: true

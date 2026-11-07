@@ -1,0 +1,26 @@
+name: "📞 Helpline update"
+description: Add a helpline or report one that doesn't work
+title: "[Helpline] "
+labels: ["helpline"]
+body:
+  - type: markdown
+    attributes:
+      value: "Only helplines run by a government body, hospital, university or registered non-profit can be added."
+  - type: input
+    id: country
+    attributes:
+      label: Country
+    validations:
+      required: true
+  - type: textarea
+    id: helpline
+    attributes:
+      label: Helpline name, number and hours
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Link to the official page that shows this number
+    validations:
+      required: true
